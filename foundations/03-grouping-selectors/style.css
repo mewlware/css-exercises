@@ -1,0 +1,40 @@
+/* the .buttons class
+was added due to a simple question
+"Does grouping selectors affect specitifity?"
+Especially in the way The Odin Project explained it,
+since it's based on "number of selectors", it
+can be implied that having two selectors grouped meant
+that the number of selectors for those styles are increased.
+Alas, that doesn't seem to be the case, as whether the .buttons
+or .one, .two classes that are applied is based on where the .buttons
+is written - hence it seems this is based on rule order, not specitifity.
+
+It can then be assumed that the "number of selectors" rule
+only apply to how many selectors are combined together,
+not how many selectors applying the same style individually
+*/
+
+
+
+
+.one,
+.two {
+    font-size: 28px;
+    font-family: 'Helvetica', 'Timesn New Roman', 'sans-serif';
+}
+
+.one {
+    background-color: black;
+    color: white;
+}
+
+.two {
+    background-color: yellow;
+}
+
+.buttons {
+    font-size: 50px;
+    font-family: 'fantasy';
+    background-color: pink;
+    color:powderblue;
+}
